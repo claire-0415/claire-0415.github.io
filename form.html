@@ -1,0 +1,120 @@
+=<!DOCTYPE html>
+<html>
+<head>
+	<link href='style.css' type='text/css' rel='stylesheet'>
+	<title>MBTI Contact Form</title>
+</head>
+<body class='form'>
+    <center><nav>
+		<a class='n' href='index.html'>Home</a>
+		<a class='n' href='16 Types.html'>16 Types</a>
+		<a class='n' href='Use.html'>Use</a>
+		<a class='n' href='form.html'>Form</a>
+	</nav></center>
+    <form>
+    	<h2>Part 1: Basic Information</h2>
+    	<label type='text' name='name'>Names:</label>
+    	<input type='text' name='name' required><br>
+
+    	<label for='name'>Email:</label>
+    	<input type='email' name='email' required><br>
+
+    	<label type='dob'>The Date You First Came Into Contact with MBTI :</label>
+    	<input type='date' name='dob'><br>
+
+    	<label for='time'>What Time Period Do You Usually Browse MBTI-Related Content?</label>
+    	<input type='time' name='time'><br>
+    	<hr>
+    	<h2>Part 2: MBTI-Related Cognition</h2>
+    	<label for='Your MBTI Personality Type'>Your MBTI Personality Type</label><br>
+    	<input type='checkbox' name='Not Tested'>
+    	<label for='Not Tested'>Not Tested(No clear type yet)</label><br>
+    	<input type='checkbox' name='INTJ'>
+    	<label for='INTJ'>INTJ(Architect)</label><br>
+    	<input type='checkbox' name='INTP'>
+    	<label for='INTP'>INTP(Logician)</label><br>
+    	<input type='checkbox' name='INFJ'>
+    	<label for='INFJ'>INFJ(Advocate)</label><br>
+    	<input type='checkbox' name='INFP'>
+    	<label for='INFP'>INFP(Mediator)</label><br>
+    	<input type='checkbox' name='ENTJ'>
+    	<label for='ENTJ'> ENTJ(Commander)</label><br>
+    	<input type='checkbox' name='ENTP'>
+    	<label for='ENTP'>ENTP(Debater)</label><br>
+    	<input type='checkbox' name='ENFJ'>
+    	<label for='ENFJ'>ENFJ(Protagonist)</label><br>
+    	<input type='checkbox' name='ENFP'>
+    	<label for='ENFP'>ENFP(Campaigner)</label><br>
+    	<input type='checkbox' name='ISTJ'>
+    	<label for='ISTJ'>ISTJ(Logistician)</label><br>
+    	<input type='checkbox' name='ISFJ'>
+    	<label for='ISFJ'>ISFJ(Defender)</label><br>
+    	<input type='checkbox' name='ESTJ'>
+    	<label for='ESTJ'>ESTJ(Executive)</label><br>
+    	<input type='checkbox' name='ESFJ'>
+    	<label for='ESFJ'>ESFJ(Consul)</label><br>
+    	<input type='checkbox' name='ISTP'>
+    	<label for='ISTP'>ISTP(Virtuoso)</label><br>
+    	<input type='checkbox' name='ISFP'>
+    	<label for='ISFP'>ISFP(Adventurer)</label><br>
+    	<input type='checkbox' name='ESTP'>
+    	<label for='ESTP'>ESTP(Entrepreneur)</label><br>
+    	<input type='checkbox' name='ESFP'>
+    	<label for='ESFP'>ESFP(Entertainer)</label><br><br>
+
+    	<label for='color'>What Color Do You Think Best Represents Your MBTI Type?</label>
+    	<input type='color' name='color'><br><br>
+
+    	<label for='channel'>Through Which Channels Did You Mainly Learn About MBTI? </label><br>
+    	<input type='radio' name='channel' value='Social Media'>
+    	<label for='Social Media'>Social Media(Douyin, Xiaohongshu, Weibo, etc.)</label><br>
+    	<input type='radio' name='channel' value='Recommendation'>
+    	<label for='Recommendation'>Recommendation from Friends/Family</label><br>
+    	<input type='radio' name='channel' value='Workplace'>
+    	<label for='Workplace'>Workplace Training/Team Building</label><br>
+    	<input type='radio' name='channel' value='Courses'>
+    	<label for='Courses'>Educational Courses(Psychology, Sociology, etc.)</label><br>
+    	<input type='radio' name='channel' value='Book'>
+    	<label for='Book'>Relevant Books/Articles</label><br>
+    	<input type='radio' name='channel' value='Other'>
+    	<label for='Other'>Other(Please supplement in the fill-in-the-blank below)</label><br>
+    	<label for='other'>If you select "Other" channels, please supplement:</label>
+    	<input type='text' name='other'>
+    	<hr>
+
+    	<h2>Part 3: Feedback </h2>
+    	<label for='need'>What is Your Core Need for Visiting This Website?</label><br>
+    	<input type='radio' name='need' value='Test'>
+    	<label for='Test'>Test/Confirm your own MBTI type</label><br>
+    	<input type='radio' name='need' value='Understand'>
+    	<label for='Understand'>Understand the detailed characteristics of the 16 personality types</label><br>
+    	<input type='radio' name='need' value='Learn'>
+    	<label for='Learn'>Learn the application of MBTI in life/work/interpersonal relationships</label><br>
+    	<input type='radio' name='need' value='Feedback'>
+    	<label for='Feedback'>Feedback website problems/propose optimization suggestions</label><br>
+    	<input type='radio' name='need' value='Consult'>
+    	<label for='Consult'>Consult MBTI-related questions</label><br>
+    	<input type='radio' name='need' value='Other'>
+    	<label for='Other'>Other(Please supplement in the fill-in-the-blank below)</label><br>
+    	<label for='other'>If you select "Other" channels, please supplement:</label>
+    	<input type='text' name='other'><br><br>
+
+    	<label type='text' name='Suggestions'>Your Suggestions for This Website or MBTI-Related Questions:</label>
+    	<input type='text' name='Suggestions' required><br><br>
+
+    	<label for='file'>If you have relevant attachments (e.g. MBTI test report, screenshot of questions, etc.), you can upload them</label>
+    	<input type='file' name='file'><br>
+    	<hr>
+
+    	<h2>Part 4: Supplementary Instructions </h2>
+    	<label for='send'> Do You Want Us to Send You MBTI-Related Materials(e.g., Test Link, Type Analysis) via Email? </label>
+    	<select>
+    		<option name='yes'>Yes(We will send you a free MBTI test link and basic analysis materials)</option>
+    		<option name='no'>No(We will only reply to your questions/suggestions and will not send additional materials)</option>
+    	</select><br><br>
+    	<input type='submit'>
+    </form>
+
+
+</body>
+</html>

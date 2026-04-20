@@ -1,0 +1,136 @@
+/*navgation bar*/
+.n{
+	text-decoration:none;
+	padding:10px 20px;
+	background-color:rgb(238, 218, 242);
+	margin:-2px;
+}
+.n:hover{
+	background-color:lightblue;
+	color:white;
+	border:2px solid white;
+}
+
+/*home page*/
+.hbg{
+	background-image:url(https://i.pinimg.com/736x/34/38/2c/34382c23fe9644a7d49b545ddaa8990c.jpg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+
+}
+.col{
+	width:50%;
+	float:left;
+	text-align:center;
+	margin-top:40px;
+	margin-bottom:50px;
+	font-family: cursive;
+}
+.coltwo{
+	width:50%;
+	float:right;
+	text-align:center;
+	margin-top:40px;
+	font-family:cursive;
+ }
+ .colthree{
+ 	margin-top:100px;
+ 	width:50%;
+	float:right;
+	text-align:center;
+	font-family:cursive;
+	
+ }
+
+
+/*16types page*/
+.tbg{
+	background-image:url(https://i.pinimg.com/736x/f6/93/55/f6935573b1955e937038a3b069399325.jpg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+
+}
+.tcol{
+	width:50%;
+	float:left;
+	text-align:center;
+	margin-bottom:10px;
+	font-family:cursive;
+
+}
+img{
+	border-radius:30px;
+	 border:3px dashed black;
+}
+.toltwo{
+	width:24%;
+	float:left;
+	text-align:center;
+	margin-bottom:100px;
+	font-family:cursive;
+}
+.tolthree{
+	width:24%;
+	float:left;
+	text-align:center;
+	margin-bottom:100px;
+	font-family:cursive;
+}
+.tolfour{
+	width:24%;
+	float:left;
+	text-align:center;
+	margin-bottom:100px;
+	font-family:cursive;
+}
+.tolfive{
+	width:24%;
+	float:left;
+	text-align:center;
+	margin-bottom:100px;
+    font-family:cursive;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.type{
+	margin-top:-10px;
+}
+
+/*Use page*/
+.ubg{
+	background-image:url(https://i.pinimg.com/236x/33/f4/e8/33f4e8f28971513ad62b9a7116305ee6.jpg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+
+}
+.ucol{
+	width:50%;
+	float:right;
+	text-align:center;
+	margin-bottom:100px;
+	font-family:cursive;
+}
+.ucoltwo{
+	width:33%;
+	float:right;
+	text-align:center;
+	margin-top:100px;
+	font-family:cursive;
+
+}
+.ucolthree{
+	width:33%;
+	float:right;
+	text-align:center;
+	font-family:cursive;
+
+}
+/*Form page*/
+.form{
+	background-image:url(https://i.pinimg.com/736x/3b/dc/29/3bdc293c18bf9c3de910d38da12fd053.jpg);
+	background-attachment:fixed;
+	background-size:100% 100%;
+}
