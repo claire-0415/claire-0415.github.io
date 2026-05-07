@@ -136,7 +136,7 @@
 
         //section 5 Cyber Threat Detector//
         function analyze(){
-        	let url = document.getElementById('url').value;
+        let url = document.getElementById('url').value;
           let suspicious = false;
             if (url.includes('free-money')) {
                 suspicious = true;
@@ -152,14 +152,14 @@
             }
 
             let link = url.startsWith('https://');
-            if (link){
+            if (link && !suspicious){
                 document.getElementById('threatResult').innerHTML = 'Safe Website';
+            } 
+            else if (link && suspicious) {
+                document.getElementById('threatResult').innerHTML = 'Suspicious Website';
             } 
             else if (!link && suspicious) {
                 document.getElementById('threatResult').innerHTML = 'Dangerous Website';
-            } 
-            else if (!link && !suspicious) {
-                document.getElementById('threatResult').innerHTML = 'Suspicious Website';
             } 
             else {
                 document.getElementById('threatResult').innerHTML = 'Please enter a valid URL';
