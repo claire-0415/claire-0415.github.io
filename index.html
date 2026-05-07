@@ -1,56 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta name='description' content='This website is provide information about MBTI,for people who do not know or want to learn more about MBTI'>
-	<meta name='keywords' content='MBTI,16 types, Personality'>
-	<link href='style.css' type='text/css' rel='stylesheet'>
-	<title>Basic Information about MBTI</title>
-
-
-</head>
-<body class='hbg'>
-	<center><nav>
-		<a class='n' href='index.html'>Home</a>
-		<a class='n' href='16 Types.html'>16 Types</a>
-		<a class='n' href='Use.html'>Use</a>
-		<a class='n' href='form.html'>Form</a>
-	</nav></center>
-
-	<div class='rowtwo'>
-		<div class='col'>
-			<h3>What is MBTI?</h3>
-			<p>MBTI, short for Myers–Briggs Type Indicator, is a personality assessment tool based on psychological theories. Its core is to measure and describe the psychological activity rules of individuals in terms of information acquisition, decision-making, and life attitude through four opposing dimensions (Extraversion/Introversion, Sensing/Intuition, Thinking/Feeling, Judging/Perceiving). Finally, people are divided into 16 unique personality types, each represented by a combination of four letters (such as INTJ, ENFP). It is not a judgment on the pros and cons of personality, but an objective presentation of personality preferences. Its core logic is derived from the psychological type theory of Carl Jung, a Swiss psychologist, and it is a simplified and easy-to-understand tool for personality cognition.</p>
+	<head>
+		<title>interactive website</title>
+		<style>
+			.section{
+				padding:20px;
+				margin-bottom:20px ;
+				border-radius:15px;
+				border:2px solid rgb(169, 196, 196);
+			}
+			button:hover{
+				background-color:rgb(170, 170, 191);
+        color: white;
+       }
+		</style>
+	</head>
+	<body id='body'>
+		<div>
+			<button id='dark' onclick='dark()'>Dark Mode</button>
 		</div>
-		<div class='col'>
-			<a href='https://www.bilibili.com/video/BV1ob411V7bF?t=3.1'><img src='https://i.pinimg.com/1200x/12/17/43/1217433e7dd8dd238965c8fd0ed3e424.jpg' width='70%' height='250px'></a>
+		<div class='section'>
+			<h1>Password Strength Checker</h1>
+			<label>please enter password:</label>
+			<input type='text' id='password' placeholder="create a passsword here" >
+			<button onclick='check()'>Check Password</button>
+			<h3 id='result'></h3>
 		</div>
-	</div>
 
-
-
-	<div class='rowtwo'>
-		<div class='coltwo'>
-			<h3>MBTI History</h3>
-	        <p>The theoretical prototype of MBTI comes from Carl Jung's book 'Psychological Types' published in 1921, in which he first proposed that humans have two basic attitudes (Introversion/Extraversion) and four functions (Thinking, Feeling, Sensing, Intuition), laying the core theoretical foundation for MBTI. In the 1940s, Katharine Cook Briggs and her daughter Isabel Briggs Myers from the United States were inspired by Jung's theory and hoped to popularize the complex psychological type theory to the public. After years of research and practice, they expanded Jung's 8 types into 16 types and designed a standardized questionnaire. The first version of MBTI was officially released in 1943. After more than 70 years of iteration, it has now been translated into more than 30 languages and used more than 1 billion times worldwide, becoming one of the most widely used personality tools in the world</p>
+		<div class='section'>
+			<h1>Security Clearance System</h1>
+        <label>Age:</label>
+        <input type='text' id='age'><br>
+        <label>Employee ID:</label>
+        <input type='text' id='emId' placeholder="start with EMP or SEC"><br>
+        <label>Years of experience:</label>
+        <input type='text' id='experience'><br>
+        <button onclick='checkClearance()'>Check Clearance</button>
+        <h3 id='clearanceResult'></h3>
 		</div>
-		<div class='coltwo'>
-			<img src='https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhxao6AfPzALGh0LKesW4fpYQu0hPc31ed8PatEdnFQp3ChdsnSwVTsY-g8mXPKcifJgXN3Zcwfs-aYzEE0LWLCZroFuPFIzevuNCmZ63ENMNV47-8ITOqS9OxebV4ix_LamGAzgg/s1600/Myersbriggs.png' width='500px' height='200px'>
-			<img src='https://miro.medium.com/v2/resize:fit:768/0*NMCZ626AfuoCdqQR.jpg' width='500px' height='200px'>
+
+		<div class='section'>
+		    <h1>Sign up / Login Simulator</h1>
+            <label>Name:</label>
+            <input type='text' id='name'><br>
+            <label>Password:</label>
+            <input type='password' id='psw'><br>
+            <button onclick='getpsw()'>sign up</button>
+            <button onclick='signin()'>log in</button>
+            <h3 id='result2' class="result"></h3>	
 		</div>
-	</div>
 
-	<div class='rowtwo'>
-		<div class='colthree'>
-			<video src='video.mp4' width="500px" height="400px" controls>
+		<div class='section'>
+			<h1>Cyber Threat Detector</h1>
+        <label>Website URL:</label>
+        <input type='text' id='url' placeholder="start with https://"><br>
+        <button onclick='analyze()'>Analyze Website</button>
+        <h3 id='threatResult'></h3>
 		</div>
-		<div class='colthree'>
-			<h3>Original Purpose & Significance</h3>
-			<p>In terms of the original purpose, MBTI was born during World War II. At that time, a large number of men joined the military, resulting in a shortage of the labor market. The Briggs mother and daughter hoped to use this tool to help women entering the workplace match jobs suitable for their personalities, improve labor efficiency during the war, and solve the problem of job matching. In terms of significance, at the personal level, it helps people objectively recognize themselves, understand their own personality strengths and preferences, clarify the direction of growth and development, and reduce internal friction. At the interpersonal level, it enables people to understand the differences between different personalities, learn to view others from an inclusive and diverse perspective, reduce communication conflicts, and promote interpersonal harmony. At the social level, it is widely used in career counseling, team building, education and other fields, providing reference for personal development and organizational optimization, and becoming an important bridge connecting self-cognition and social application. Even if there are certain academic controversies, its value in popularizing the cognition of personality diversity and assisting self-exploration is still significant</p>
-		</div>
-		
-	</div>
+		<script>
+			//section 1 Password Strength Checker //
+			function check(){
+				let password = document.getElementById('password').value;
+				let result = '';
+				if(password.length<12){
+					result+='Password too short.<br>';
+				}
+				if (!/[A-Z]/.test(password)) {
+                    result += 'Missing uppercase letter <br>';
+                }
+                if (!/[a-z]/.test(password)) {
+                  result += 'Missing lowercase letter <br>';
+                }
+                if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~`]/.test(password)) {
+                  result += 'Missing punctuation <br>';
+                }
+                if (password.includes(' ')) {
+                  result += 'Password cannot contain spaces <br>';
+                }
+                if(password.length >= 12 && /[A-Z]/.test(password) && /[a-z]/.test(password) && /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~`]/.test(password) &&!password.includes(' ')){
+                    result = 'Strong Password';
+                }
+                document.getElementById('result').innerHTML = result;
+            }
+            //section 2 Security Clearance System//
+            function checkClearance() {
+            let age = document.getElementById('age').value;
+            let emId = document.getElementById('emId').value;
+            let experience = document.getElementById('experience').value;
+            if (!emId.startsWith('EMP') && !emId.startsWith('SEC')) {
+               document.getElementById('clearanceResult').innerHTML = 'invalid employee ID';
+                return;
+            }
+            if (age >= 25 && experience >= 5 && emId.startsWith('SEC')) {
+                document.getElementById('clearanceResult').innerHTML = 'Access Granted: Level 3';
+                return;
+            }
+            if (age >= 21 && experience >= 2 && emId.startsWith('EMP')) {
+                document.getElementById('clearanceResult').innerHTML = 'Access Granted: Level 2';
+                return;
+            }
+            if (age >= 18 && emId.startsWith('EMP')) {
+                document.getElementById('clearanceResult').innerHTML = 'Access Granted: Level 1';
+                return;
+            }
+            document.getElementById('clearanceResult').innerHTML = 'invalid employee ID';
+        }
+            
+          //section 3 Sign up / Login Simulator //
+            let database = [];
+            function getpsw(){
+            	let user_entered = document.getElementById('name').value;
+              let psw_entered = document.getElementById('psw').value;
+              let pair = (user_entered + ' ' + psw_entered).split(' ');
+            database.push(pair);
+            document.getElementById('result2').innerHTML = 'registration ok!';
+            }
 
+            function signin(){
+            let user_entered = document.getElementById('name').value;
+            let psw_entered = document.getElementById('psw').value;
+            for (let i = 0; i < database.length; i++) {
+                if (database[i][0] == user_entered && database[i][1] == psw_entered) {
+                   document.getElementById('result2').innerHTML = 'Login Successful';
+                    return;
+                }
+               }
+            for (let i = 0; i < database.length; i++) {
+                if (database[i][0] == user_entered) {
+                    document.getElementById('result2').innerHTML = 'Incorrect password';
+                    return;
+                }
+            }
+            document.getElementById('result2').innerHTML = 'Username not found';
+        }
 
+        //section 5 Cyber Threat Detector//
+        function analyze(){
+        	let url = document.getElementById('url').value;
+          let suspicious = false;
+            if (url.includes('free-money')) {
+                suspicious = true;
+            }
+            if (url.includes('hack')) {
+                suspicious = true;
+            }
+            if (url.includes('winner')) {
+                suspicious = true;
+            }
+            if (url.includes('bitcoin')) {
+                suspicious = true;
+            }
 
-</body>
+            let link = url.startsWith('https://');
+            if (link){
+                document.getElementById('threatResult').innerHTML = 'Safe Website';
+            } 
+            else if (!link && suspicious) {
+                document.getElementById('threatResult').innerHTML = 'Dangerous Website';
+            } 
+            else if (!link && !suspicious) {
+                document.getElementById('threatResult').innerHTML = 'Suspicious Website';
+            } 
+            else {
+                document.getElementById('threatResult').innerHTML = 'Please enter a valid URL';
+            }
+        }
+        //section 4 dark mode button//
+        function dark(){
+        	let body = document.getElementById('body');
+          let dark = document.getElementById('dark');
+          if (body.style.backgroundColor =='black') {
+                body.style.backgroundColor = 'white';
+                body.style.color = 'black';
+                dark.innerHTML = 'Dark Mode';
+            } 
+            else {
+                body.style.backgroundColor = 'black';
+                body.style.color = 'white';
+                dark.innerHTML = 'Light Mode';
+            }
+        }        
+		</script>
+	</body>
 </html>
